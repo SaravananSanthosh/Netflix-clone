@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  
+  .inputHome:focus+label,
+  .inputHome:not(:placeholder-shown)+label {
+    top: 6px;
+    left: 15px;
+    font-size: small;
+  }
+  
+  .inptSign:focus+label,
+  .inptSign:not(:placeholder-shown)+label {
+    top: 185px;
+    left: 500px;
+    font-size: small;
+  }
+  
+  .inptSignn:focus+label,
+  .inptSignn:not(:placeholder-shown)+label {
+    top: 225px;
+    left: 500px;
+    font-size: small;
+  }
+  
+  .imghov:hover~.profile {
+    display: block;
+  }
+  
+  .profile {
+    display: none;
+  }
+  
+  .profile:hover {
+    display: block;
+  }
+  
+  .hi::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hov:hover .con {
+    display: block;
+  }
+        .con {
+          display: none;
+        }
