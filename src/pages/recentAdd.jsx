@@ -16,15 +16,10 @@ const RecentAdded = () => {
 
   const recentList = async () => {
     const { data } = await axios.get("http://localhost:3006/recent");
-    setRecent(
-      data.length > 10
-        ? recentDelete(data.reverse()[data.length - 1])
-        : data.reverse()
-    );
+    if (data.length > 10) setRecent(data.slice(0, 10));
+    else if (data.length < 10) setRecent(data);
   };
-  const recentDelete = async (data) => {
-    const fel = await axios.delete(`http://localhost:3006/recent/${data.id}`);
-  };
+
   useEffect(() => {
     recentList();
   }, []);
@@ -35,7 +30,7 @@ const RecentAdded = () => {
   return (
     <>
       {recent.length > 0 ? (
-        <ul className="grid grid-cols-5 h-[100vh] bg-black">
+        <ul className="grid grid-cols-5 h-[100vh] relative">
           {recent?.map((data) => (
             <li key={data.id} className="hov">
               <img
@@ -43,8 +38,8 @@ const RecentAdded = () => {
                 src={`${base_url}${data.poster_path}`}
                 alt=""
               />
-              <div className=" bg-[#000000a8] text-white absolute top-[153px] w-[100%] pl-[15px] ">
-                <div className="flex pt-[30px]">
+              <div className=" bg-[#000000a8] text-white  top-[153px] w-[100%] pl-[15px] ">
+                <div className="flex pt-[30px] ">
                   <div className="flex  ">
                     <BsPlayCircleFill className="text-[30px] border p-[5px] rounded-[50%] mr-[5px]" />
                     <BsPlusLg

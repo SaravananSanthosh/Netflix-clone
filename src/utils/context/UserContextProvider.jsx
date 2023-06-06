@@ -10,25 +10,6 @@ const UserContextProvider = ({ children }) => {
   const [link, setLink] = useState("");
   const [des, setDes] = useState(null);
 
-  const [popularData, setPopularData] = useState([]);
-  const [trendingData, setTrendingData] = useState([]);
-  const [upcomingData, setUpcomingData] = useState([]);
-  const [topratedData, setTopratedData] = useState([]);
-
-  const onlineData = async () => {
-    const { data } = await axios.get("http://localhost:3006/popular");
-    setPopularData(data);
-    const res = await axios.get("http://localhost:3006/trending");
-    setTrendingData(res.data);
-    const re = await axios.get("http://localhost:3006/upcoming");
-    setUpcomingData(re.data);
-    const rese = await axios.get("http://localhost:3006/toprated");
-    setTopratedData(rese.data);
-  };
-  useEffect(() => {
-    onlineData();
-  }, []);
-
   useEffect(() => {
     const backEnd = async () => {
       const { data } = await axios.get(
@@ -52,10 +33,6 @@ const UserContextProvider = ({ children }) => {
         searchh,
         isPlay: setLink,
         link,
-        popularData,
-        trendingData,
-        topratedData,
-        upcomingData,
       }}
     >
       {children}

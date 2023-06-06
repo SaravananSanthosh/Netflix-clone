@@ -2000,91 +2000,7 @@
       "vote_count": 195
     }
   ],
-  "myList": [
-    {
-      "adult": false,
-      "backdrop_path": "/7bWxAsNPv9CXHOhZbJVlj2KxgfP.jpg",
-      "id": 713704,
-      "title": "Evil Dead Rise",
-      "director": "Fede Alvarez",
-      "cast": "jane Levy,shiloh Fernandez,lou Taylor Pucci,Jessica lucas,Elizabeth Blackmore,Phoenix Connolly,jim McLarty,Sian Davis,Stephen Butterworth,Karl Willetts",
-      "writer": "Fede Alvarez,Rodo sayagues",
-      "genres": "Horror Movies,US Movies",
-      "this movie is": "Dark",
-      "maturity rating": "A gore,languages,violence Content restricted to adults",
-      "original_language": "en",
-      "original_title": "Evil Dead Rise",
-      "overview": "Two sisters find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
-      "poster_path": "/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        27,
-        53
-      ],
-      "popularity": 1986.106,
-      "release_date": "2023-04-12",
-      "video": "https://www.youtube.com/embed/smTK_AeAPHs",
-      "video_id": "smTK_AeAPHs",
-      "vote_average": 7.118,
-      "vote_count": 102
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/3CxUndGhUcZdt1Zggjdb2HkLLQX.jpg",
-      "id": 640146,
-      "title": "Ant-Man and the Wasp: Quantumania",
-      "director": "Jake Kasdan",
-      "cast": "Dwayne Johnson,Jack Black,Kevin Hart,Karen Gillan,Nick Jonas,Awkwafina,Rory McCann,Danny Glover,Danny DeVito,Alex Wolff,Morgan Turner,SerDarius Blain,Madison Iseman,Colin Hanks,Rhys Darby",
-      "writer": "Jake Kasdan,Jeff Pinkner,Scott Rosenberg",
-      "genres": "Family Features,Comedies,Movies Based on Books ,Action & Adventure ,US Movies",
-      "this movie is": "Adrenaline Rush,Exciting",
-      "maturity rating": "U/A 13+ crude humor,language,violence  Suitable for persons aged 13 and above and under parental guidance for people under age of 13",
-      "original_language": "en",
-      "original_title": "Ant-Man and the Wasp: Quantumania",
-      "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
-      "poster_path": "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
-      "popularity": 6586.864,
-      "release_date": "2023-02-15",
-      "video": "https://www.youtube.com/embed/ZlNFpri-Y40",
-      "video_id": "ZlNFpri-Y40",
-      "vote_average": 6.5,
-      "vote_count": 1666
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/b9UCfDzwiWw7mIFsIQR9ZJUeh7q.jpg",
-      "id": 868759,
-      "title": "Ghosted",
-      "director": "Gideon Raff",
-      "cast": "Chris Evans,michael Kenneth Williams,Haley Benneth,Alessandro Nivola Michiel Huismam,Alex Hassell,Mark Ivanir,Chris Chalk,Greg Kinnear,Ben kingsley",
-      "writer": "Gideon Raff",
-      "genres": "Dramas,Thriller Movies,US Movies",
-      "this movie is": "Gritty,Suspenseful,Exciting",
-      "maturity rating": "U/A 16+ gore,language,mature themes Suitable for persons aged 16 and above and under parental guidance foe people under age of 16",
-      "original_language": "en",
-      "original_title": "Ghosted",
-      "overview": "Salt-of-the-earth Cole falls head over heels for enigmatic Sadie — but then makes the shocking discovery that she’s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
-      "poster_path": "/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        10749,
-        28,
-        35
-      ],
-      "popularity": 161.347,
-      "release_date": "2023-04-21",
-      "video": "https://www.youtube.com/embed/IAdCsNtEuBU",
-      "video_id": "IAdCsNtEuBU",
-      "vote_average": 7.25,
-      "vote_count": 176
-    }
-  ],
+  "myList": [],
   "trending": [
     {
       "adult": false,
@@ -2170,7 +2086,7 @@
       "vote_count": 102
     },
     {
-      "adult": false,
+      "adult": true,
       "backdrop_path": "/tr91gx3LHDXADTuXga0skogvMw3.jpg",
       "id": 130987,
       "name": "Dead Ringers",

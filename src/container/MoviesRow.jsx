@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
+import server from "../lib/axios/server";
 import { useNavigate } from "react-router-dom";
+import { updatedlike } from "../lib/axios/api-functions/movies";
 import { BsPlayCircleFill } from "react-icons/bs";
 import { BsPlusLg } from "react-icons/bs";
 import { BiLike } from "react-icons/bi";
@@ -9,7 +11,7 @@ import { AiOutlineDownSquare } from "react-icons/ai";
 import "react-multi-carousel/lib/styles.css";
 
 const base_url = "https://image.tmdb.org/t/p/original";
-const DataRow = ({ title, fetchUrl, isLargeRow }) => {
+const DataRow = ({ title, fetchUrl, isLargeRow, setData }) => {
   const [movies, setMovies] = useState([]);
   const postCart = async (movie) =>
     await axios.post(`http://localhost:3006/myList`, movie);
@@ -46,7 +48,9 @@ const DataRow = ({ title, fetchUrl, isLargeRow }) => {
   }, []);
   return (
     <>
-      <h1 className="title p-2 bg-black text-white ml-2 font-bold">{title}</h1>
+      <h1 className="title p-2 bg-black text-white ml-2 font-bold">
+        {title.toUpperCase()}
+      </h1>
 
       <div className="overflow-x-auto hi  ">
         <Carousel responsive={responsive}>
@@ -72,7 +76,20 @@ const DataRow = ({ title, fetchUrl, isLargeRow }) => {
                       onClick={() => postCart(movie)}
                     />
 
-                    <BiLike className="text-[26px] border p-[5px] rounded-[50%]  hover:scale-150 hover:bg-black" />
+                    <BiLike
+                      className={`text-[26px] border p-[5px] rounded-[50%]  hover:scale-150 ${
+                        movie.adult ? "bg-green-400" : ""
+                      }`}
+                      onClick={async () => {
+                        await updatedlike(
+                          { ...movie, adult: !movie.adult },
+                          title
+                        );
+                        server
+                          .get(`/${title}`)
+                          .then(({ data }) => setData(data));
+                      }}
+                    />
                     <AiOutlineDownSquare
                       onClick={() => {
                         navigate(`/browse/${movie.id}`);
