@@ -54,9 +54,9 @@ const NavBar = () => {
         <FaUserCircle className="h-20 w-10 absolute right-10 imghov" />
         <div className="profile z-10">
           <div className=" bg-black absolute top-14 h-40 w-60 grid justify-center items-center right-5 text-white border rounded-lg">
-            <SlUserFollowing className="h-20 w-10 ml-12" />
+            <SlUserFollowing className="h-20 w-10 ml-24" />
 
-            <h1>{user?.email}</h1>
+            <h1 className="text-sm">{user?.email}</h1>
 
             <div className="flex">
               <BiKey className=" flex-1" />
